@@ -163,7 +163,7 @@ const Collection = () => {
           <div className='flex flex-col gap-2 text-sm font-light '>
 
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Arunachal_Pradesh'} onChange={toggleState}/> Arunachal Pradesh
+              <input className='w-3' type="checkbox" value={'ArunachalPradesh'} onChange={toggleState}/> Arunachal Pradesh
             </p>
 
             <p className='flex gap-2'>

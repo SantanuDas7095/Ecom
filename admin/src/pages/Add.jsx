@@ -138,7 +138,7 @@ const Add = ({token}) => {
           <p className='mb-2'>Product State</p>
 
           <select onChange={(e) => setState(e.target.value)} className='w-full px-3 py-2'>
-            <option value="Arunachal_Pradesh">Arunachal Pradesh</option>
+            <option value="ArunachalPradesh">Arunachal Pradesh</option>
             <option value="Assam">Assam</option>
             <option value="Manipur">Manipur</option>
             <option value="Meghalaya">Meghalaya</option>

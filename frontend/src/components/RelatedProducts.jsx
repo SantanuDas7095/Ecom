@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import Title from './Title';
 import ProductItem from './ProductItem';
@@ -6,7 +6,7 @@ import ProductItem from './ProductItem';
 const RelatedProducts = ({category,state}) => {
 
     const { products } = useContext(ShopContext);
-    const [related,setRelated] = useState([]);
+    const [related ,setRelated] = useState([]);
 
     useEffect (()=>{
 
@@ -14,7 +14,7 @@ const RelatedProducts = ({category,state}) => {
 
             let ProductsCopy = products.slice();
 
-            ProductsCopy = ProductsCopy.filter((item)=> category === item.category );
+            ProductsCopy = ProductsCopy.filter((item)=> category === item.category);
             ProductsCopy = ProductsCopy.filter((item)=> state === item.state);
 
             setRelated(ProductsCopy.slice(1,6));
@@ -34,11 +34,13 @@ const RelatedProducts = ({category,state}) => {
 
         <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6 '>
 
-            {related.map((item,index)=>(
+            {
+                related.map((item,index)=>(
 
-                <ProductItem key={index} id={item._id} name={item.name} price={item.price} image={item.image}/>
-
-            ))}
+                    <ProductItem key={index} id={item._id} image={item.image} name={item.name} price={item.price}/>
+                    
+                ))
+            }
 
         </div>
       
