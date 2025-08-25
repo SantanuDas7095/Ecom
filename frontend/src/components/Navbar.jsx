@@ -43,7 +43,7 @@ const Navbar = () => {
           <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
 
-        <NavLink to='' target="_blank" className="border px-5 text-xs py-1 rounded-full -mt-2">
+        <NavLink to='https://a-pi-pearl.vercel.app' target="_blank" className="border px-5 text-xs py-1 rounded-full -mt-2">
           <p className="mt-1">Admin Panel</p>
         </NavLink>
 
