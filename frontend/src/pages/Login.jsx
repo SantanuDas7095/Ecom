@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 const Login = () => {
 
-  const [currentState , setCurrentState] = useState('Sign Up');
+  const [currentState , setCurrentState] = useState('SignUp');
   const {token, setToken, navigate, backendUrl}  = useContext (ShopContext)
 
   const [name,setName] = useState ('')
@@ -16,7 +16,7 @@ const Login = () => {
     event.preventDefault();
 
     try {
-      if (currentState === 'Sign Up') {
+      if (currentState === 'SignUp') {
         
         const response = await axios.post(backendUrl + '/api/user/register', {name,email,password})
 
@@ -79,7 +79,7 @@ const Login = () => {
 
         {
           currentState ==='Login'
-          ? <p onClick={()=>setCurrentState('Sign up')} className='cursor-pointer'>Create account</p>
+          ? <p onClick={()=>setCurrentState('Signup')} className='cursor-pointer'>Create account</p>
           : <p onClick={()=>setCurrentState('Login')} className='cursor-pointer'>Login Here</p>
         }
 

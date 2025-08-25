@@ -17,7 +17,7 @@ const loginUser = async (req, res) =>{
         const user = await userModel.findOne({email});
 
         if(!user){
-            return res.json({success:false, message:"User doesn't exits"})
+            return res.json({success:false, message:"User doesn't exist"})
 
         }
 
@@ -30,7 +30,7 @@ const loginUser = async (req, res) =>{
 
         }
         else{
-            res.json({success:false,message: 'invalid credentials'})
+            res.json({success:false,message: 'Invalid Credentials'})
         }
 
     }catch (error){
@@ -53,7 +53,7 @@ const registerUser = async (req,res) => {
         // checking user already exits or not
         const exists = await userModel.findOne({email})
         if (exists){
-            return res.json({success:false, message:"User already exits"})
+            return res.json({success:false, message:"User already exist"})
         }
 
         //validating email format & strong password
