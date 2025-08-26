@@ -99,7 +99,7 @@ const Navbar = () => {
           <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to='/collection'>COLLECTION</NavLink>
           <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to='/about'>ABOUT</NavLink>
           <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to='/contact'>CONTACT</NavLink>
-          <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to='/'>ADMIN PANEL</NavLink>
+          <NavLink onClick={()=>setVisible(false)} className="py-2 pl-6 border" to='https://hubadmin-panel.vercel.app'>ADMIN PANEL</NavLink>
 
         </div>
 
