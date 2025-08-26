@@ -12,7 +12,7 @@ const Footer = () => {
 
                 <Link to={'/'}><img src={assets.logo} className='mb-5 w-32 ' onClick={()=>window.scrollTo({top:0 , left:0 , behavior:'smooth'})} alt=''/></Link>
                 <p className='w-full md:w-2/3 text-gray-600'>
-                random shit
+                Celebrating the vibrant heritage and exquisite craftsmanship of Northeast India, one piece at a time. Welcome to HeritageHub.
                 </p>
 
             </div>
@@ -35,7 +35,7 @@ const Footer = () => {
                 <ul className='flex flex-col gap-1 text-gray-600'>
 
                     <li>+91-94369990 , +1-004-004-444</li>
-                    <li>conatact@heritagehub.com</li>
+                    <li>contact@heritagehub.com</li>
                     <Link to='https://www.youtube.com/channel/UCST4JnGUuYB0gbf2ogISFAA' target='_blank'><li>Youtube</li></Link>
                     <Link to='https://www.instagram.com/heritage.hub2025' target='_blank'><li>Instagram</li></Link>
 

@@ -20,8 +20,8 @@ const Contact = () => {
         <div className='flex flex-col justify-center items-start gap-6' >
 
           <p className=' font-semibold text-xl text-gray-600 ' >Our Store</p>
-          <p className='text-gray-500' >ADDRESS <br />Agartala, Tripura, India</p>
-          <p className='text-gray-500'>Tel: +1-004-004-444<br />Email: conatact@heritagehub.com</p>
+          <p className='text-gray-500' > Heritage HUB <br />Agartala, Tripura, India</p>
+          <p className='text-gray-500'>Tel: +1-004-004-444<br />Email: contact@heritagehub.com</p>
           <p className="font-semibold text-xl text-gray-600">Careers at Forever</p>
           <p className=" text-gray-500">Learn more about our teams and job openings.</p>
 
