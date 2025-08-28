@@ -1,195 +1,143 @@
-E-Commerce Platform
+# Herritage Hub 🛍️
+
+## About the Project
+
+This is a full-stack e-commerce platform built to support and showcase the unique arts and crafts from the Northeast region of India. The platform is developed using the **MERN stack** (MongoDB, Express.js, React, Node.js) and is deployed on **Vercel**. It provides a complete solution for both customers to browse and purchase products, and for administrators to manage the store.
+
+## Features ✨
+
+### Customer Features
+- **Product Discovery:** Intuitive browsing, searching, and filtering of products.
+- **Secure Authentication:** User registration and login for a personalized shopping experience.
+- **Shopping Cart:** Add, remove, and manage products in your cart before checkout.
+- **Responsive Design:** A seamless user interface across all devices (mobile, tablet, and desktop).
+-  **Order Management**: Track order history and status
+
+### Admin Features
+- **Dashboard:** A centralized panel to oversee store performance.
+- **Product Management:** Full CRUD (Create, Read, Update, Delete) functionality for product listings.
+- **Order Management:** Track and update the status of customer orders.
+- **User Management:** View and manage user accounts.
+
+## Technologies Used 💻
+
+### Frontend
+* **React:** For building a dynamic, single-page application.
+* **React Router:** For efficient client-side routing.
+* **Axios** - HTTP client for API requests
+* **CSS/SCSS:** For styling and design.
+
+### Backend
+* **Node.js:** The server-side runtime environment.
+* **Express.js:** The framework for building the RESTful API.
+* **MongoDB:** The NoSQL database for flexible data storage.
+* **Mongoose:** The ODM for interacting with MongoDB.
+
+### Deployment
+* **Vercel:** For a smooth, integrated deployment of both frontend and backend.
+* **MongoDB Atlas:** A cloud-hosted database service.
+
+## Getting Started 🚀
+
+### Prerequisites
+Make sure you have the following installed:
+* Node.js (LTS version)
+* npm
+* Git
+
+### Local Setup
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/SantanuDas7095/Ecommerce](https://github.com/SantanuDas7095/Ecommerce)
+    cd your-repository-name
+    ```
+2.  **Install dependencies for the frontend:**
+    ```bash
+    cd frontend
+    npm install
+    npm install react-router-dom react-toastify
+    ```
+3.  **Install dependencies for the backend:**
+    ```bash
+    cd backend
+    npm init
+    npm i cors dotenv express jsonwebtoken mongoose multer nodemon stripe validator cloudinary bcrypt
+    ```
+4.  **Install dependencies for the admin:**
+    ```bash
+    cd admin
+    npm install
+    npm install axios react-router-dom react-toastify
+    ```
+5.  **Configure environment variables for frontend:**
+    * Create a `.env` file in the `frontend` directory.
+    * Add your MongoDB connection string and a secret key:
+        ```env
+        VITE_BACKEND_URL = 'http://localhost:4000'
+        ```    
+6.  **Configure environment variables for backend:**
+    * Create a `.env` file in the `backend` directory.
+    * Add your MongoDB connection string and a secret key:
+        ```env
+        MONGODB_URI = "your_mongodb_atlas_connection_string"
+        CLOUDINARY_API_KEY = "your_cloudinary_api_key"
+        CLOUDINARY_SECRET_KEY = "your_secret_key"
+        CLOUDINARY_NAME = "your_cloudinary_name"
+        JWT_SECRET = "your_jwt_secret_key"
+        ADMIN_EMAIL = "admin_email"
+        ```
+7.  **Configure environment variables for admin:**
+    * Create a `.env` file in the `admin` directory.
+    * Add your MongoDB connection string and a secret key:
+        ```env
+        VITE_BACKEND_URL = 'http://localhost:4000'
+        ```            
+8.  **Run the application:**
+    * In the `backend` directory, run:
+        ```bash
+        npm start server
+        ```
+    The application-backend will be live at `http://localhost:4000`.
+
+    * In a new terminal, in the `frontend` directory, run:
+        ```bash
+        npm run dev
+        ```
+    The application will be live at `http://localhost:5173`.
 
-A full-stack e-commerce web application built with modern web technologies to provide a seamless online shopping experience.
+    * In a new terminal, in the `frontend` directory, run:
+        ```bash
+        npm run dev
+        ```
+    The application-admin will be live at `http://localhost:5174`.
 
-https://img.shields.io/badge/E--Commerce-Platform-blue
-https://img.shields.io/badge/React-18.2.0-blue
-https://img.shields.io/badge/Node.js-Express-green
-https://img.shields.io/badge/MongoDB-Database-green
+## Deployment on Vercel 🌐
 
-Features
+Vercel offers an easy way to deploy MERN applications by recognizing both the frontend and backend.
 
-User Features
+1.  Connect your GitHub repository to your Vercel account.
+2.  Vercel will automatically detect the React app in the `frontend` directory and the Node.js API in the `backend` directory.
+3.  Ensure you have added your environment variables (like `MONGO_URI` and `JWT_SECRET`) to your Vercel project settings.
 
-User Authentication: Secure registration and login system
+## Contributing 🙏
 
-Product Browsing: Intuitive product catalog with categories and filters
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/SantanuDas7095/Ecommerce/issues).
 
-Search Functionality: Advanced search with auto-suggestions
+1.  Fork the repository.
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your changes (`git commit -m 'feat: Add a new feature'`).
+4.  Push to the branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request.
 
-Shopping Cart: Persistent cart across sessions
+## License 📜
 
-Wishlist: Save favorite items for later
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-Order Management: Track order history and status
+## Contact 📧
 
-Product Reviews: Rate and review purchased items
+* Santanu Das
+* Email : santanudas8506@gmail.com
+* **Github :** [Github](https://github.com/SantanuDas7095)
+* **Linkedin :** [Linkedin](https://www.linkedin.com/in/santanu-das123)
 
-Admin Features
-
-Dashboard: Comprehensive sales and inventory overview
-
-Product Management: Add, edit, and manage products
-
-Inventory Management: Track and update stock levels
-
-Order Management: Process and update order statuses
-
-User Management: View and manage customer accounts
-
-Payment & Security
-
-Secure Checkout: Multiple payment gateway integration
-
-SSL Encryption: Secure data transmission
-
-Data Protection: User privacy and data security measures
-
-Tech Stack
-
-Frontend
-
-React - User interface framework
-
-Redux - State management
-
-Bootstrap/Material-UI - Component library and styling
-
-Axios - HTTP client for API requests
-
-Backend
-
-Node.js - Runtime environment
-
-Express.js - Web application framework
-
-JWT - Authentication tokens
-
-BCrypt - Password hashing
-
-Database
-
-MongoDB - NoSQL database
-
-Mongoose - Object Data Modeling (ODM) library
-
-Deployment
-
-Frontend: Vercel
-
-Backend: Vercel
-
-Database: MongoDB Atlas
-
-Storage: Cloudinary
-
-Installation
-
-Prerequisites
-
-Node.js (v14 or higher)
-
-MongoDB (local or Atlas cluster)
-
-npm or yarn package manager
-
-Setup Instructions
-
-Clone the repository
-
-bash
-git clone https://github.com/SantanuDas7095/Ecom.git
-cd Ecom
-Install backend dependencies
-
-bash
-cd backend
-npm install
-Install frontend dependencies
-
-bash
-cd ../frontend
-npm install
-Environment Configuration
-
-Create a .env file in the backend directory:
-
-text
-PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-STRIPE_SECRET_KEY=your_stripe_secret_key
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_key
-CLOUDINARY_API_SECRET=your_cloudinary_secret
-Start the development servers
-
-Backend (from backend directory):
-
-bash
-npm run dev
-Frontend (from frontend directory):
-
-bash
-npm start
-Access the application
-
-Frontend: http://localhost:5173
-
-Backend API: http://localhost:4000
-
-Usage
-Browse Products: Visit the homepage to explore featured products
-
-Create Account: Register to access full features
-
-Add to Cart: Select products and quantities
-
-Checkout: Complete purchase with secure payment
-
-Track Orders: View order history in user dashboard
-
-API Endpoints
-
-Method	Endpoint	Description
-
-POST	/api/users/register	User registration
-POST	/api/users/login	User authentication
-GET	/api/products	Get all products
-GET	/api/products/:id	Get single product
-POST	/api/orders	Create new order
-GET	/api/orders/:id	Get order details
-GET	/api/users/profile	Get user profile
-
-Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-Fork the project
-
-Create your feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Contact
-Santanu Das - GitHub - santanudas8506@gmail.com
-
-Project Link: https://github.com/SantanuDas7095/Ecom
-
-Acknowledgments
-
-Icons from Font Awesome
-
-UI inspiration from modern e-commerce platforms
-
-MongoDB for database services
-
-React community for excellent components and libraries
+Project Link: [Heritage HUB](https://heritage-hub-f.vercel.app/)
